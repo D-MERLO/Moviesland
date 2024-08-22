@@ -1,0 +1,221 @@
+html{
+    background-color: rgb(10, 10, 10);
+}
+body {
+    background-color: rgb(10, 10, 10);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(253, 253, 253);
+}
+header {
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px  ;
+    color: #cecaca;
+}
+
+nav{
+    padding: 10px;
+    background-color: rgb(27, 26, 26);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+main{
+    margin-bottom: 100px;
+    width: 100%;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5rem;
+    padding: 0px 0px 5px 0px;
+    justify-content: center;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+}
+h2{
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+}
+p {
+    padding: 1.5px;
+    color: rgb(190, 191, 192);
+}
+ul{
+    padding: 0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+li,
+a {
+    display: inline;
+    color: rgb(173, 174, 175);
+    text-decoration: none;
+    align-content: center ;
+    margin: 10px;
+}
+li, a:hover{
+    color: rgb(255, 255, 255);
+}
+footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
+    background-color: #000000;
+    color: #7c7b7b;
+    text-align: center;
+    padding: 20px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+    color: #969696;
+}
+input{
+    border: 0.5px solid #63606056;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    color: rgb(196, 195, 195);
+    width: 70%;
+    padding-block: 10px;
+}
+label{
+    margin-bottom: 5px;
+}
+.peliCard {
+    max-width: 12em;
+    justify-content: center;
+    word-wrap: break-word;
+    margin: 40px 10px;
+}
+.poster {
+    max-width: 13em;
+    padding: 0.5em 0.5em;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.title {
+    color: #ffffff;
+}
+.infoPeli {
+    color: #cecaca;
+    padding: 2px;
+}
+
+.peliCard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+.peliCardCara {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 2s;
+}
+.peliCard:hover .peliCardCara {
+    transform: rotateY(180deg);
+}
+.peliCardAtras {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.peliCard:hover .peliCardAtras {
+    transform: rotateY(0deg);
+    transition: transform 2s;
+    backface-visibility: hidden;
+}
+.carruselTamaño {
+    width: 90%; 
+    margin: 0 auto; 
+    overflow: hidden; 
+}
+.textoCarrusel{
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: "Kaushan Script", cursive;
+    font-style: normal;
+}
+.divHistoria{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.divHistoria:hover{
+    transform: scale(1.1);
+}
+.imgCine{
+    max-width: 300px;
+    max-height: 200px;
+    border: #ffffff solid 3px;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+#pelisContenedor {
+    justify-content: space-evenly;
+    display: flexbox;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+#mainHistoria{
+    display: flex;
+}
+#divCine{
+    width: 100%;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#botones{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: right;
+    margin-top: 5px;
+}
+#enviarMovie{
+    background-color: green;
+    width: 10%;
+margin: 0px 5px 0px 0px;
+}
+#enviarMovie:hover{
+    background-color: rgb(3, 148, 3);
+}
+#limpiarCampos{
+    background-color: rgb(235, 8, 8);
+    width: 10%;
+
+}
+#limpiarCampos:hover{
+    background-color: rgb(255, 0, 0);
+}
