@@ -1,5 +1,5 @@
 module.exports ={
-    mode: "development",
+    mode: "production",
     entry: {
         index: "./scripts/index.js",
         films: "./scripts/createMovie.js"
