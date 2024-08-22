@@ -15,7 +15,7 @@
   \**************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const renderPelis = __webpack_require__(/*! ./renderPelis */ \"./scripts/renderPelis.js\");\r\nconst axios = __webpack_require__(/*! axios */ \"./node_modules/axios/dist/browser/axios.cjs\");\r\n\r\nconst getMovies = async ()=> {\r\n    try {\r\n      const { data } = await axios.get(\"http://localhost:3000/movies\");\r\n      data.forEach(renderPelis);\r\n    } catch (error) {\r\n      console.log(\"La petición a la URL no se realizó correctamente\");\r\n      console.log(error.message);\r\n    }\r\n  }\r\n  \r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", ()=>{\r\n    getMovies();\r\n})\r\n\r\n\n\n//# sourceURL=webpack://front/./scripts/index.js?");
+eval("const renderPelis = __webpack_require__(/*! ./renderPelis */ \"./scripts/renderPelis.js\");\r\nconst axios = __webpack_require__(/*! axios */ \"./node_modules/axios/dist/browser/axios.cjs\");\r\nconst API_URL = process.env.REACT_APP_API_URL;\r\n\r\nconst getMovies = async ()=> {\r\n    try {\r\n      const { data } = await axios.get(`${API_URL}/movies`);\r\n      data.forEach(renderPelis);\r\n    } catch (error) {\r\n      console.log(\"La petición a la URL no se realizó correctamente\");\r\n      console.log(error.message);\r\n    }\r\n  }\r\n  \r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", ()=>{\r\n    getMovies();\r\n})\r\n\r\n\n\n//# sourceURL=webpack://front/./scripts/index.js?");
 
 /***/ }),
 
