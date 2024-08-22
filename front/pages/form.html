@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kaushan+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Form</title> 
+</head>
+<body>
+    <header>
+        <h1>Moviesland</h1>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./historiaDelCine.html">Historia del cine</a></li>
+            <li><a href="./peliSiempre.html">Peli Siempre</a></li>
+            <li><a href="./form.html">Crear</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        
+            <form id="Form" action="#" method="post" enctype="multipart/form-data">
+                <h2>Nueva Película</h2>
+                <label for="title"></label>
+                <input type="text" name="titulo" id="title" placeholder="Título:" autocomplete="off" required>
+
+                <label for="year"></label>
+                <input type="number" name="año" id="year" min="1800" maxlength="4" placeholder="Año:" autocomplete="off" required></input>
+
+                <label for="director"></label>
+                <input type="text" name="director" id="director" placeholder="Director:" autocomplete="off" required>
+
+                <label for="duration"></label>
+                <input type="text" name="duracion" id="duration" placeholder="Duración:" autocomplete="off" required>
+
+                <label for="genre"></label>
+                <input type="text" name="genero" id="genre" placeholder="Género:" autocomplete="off" required>
+             
+                <label for="rate"></label>
+                <input type="number" step="any" name="rate" id="rate" step="0.01" min="" max="10" placeholder="Calificación:" autocomplete="off" required>
+
+                <label for="poster"></label>
+                <input type="url" name="poster" id="poster" placeholder="URL del poster:" autocomplete="off" required>
+                <div id="botones">
+                  <input type="submit" id="enviarMovie" value="Enviar"> 
+                  <input type="reset" id="limpiarCampos" value="Limpiar"> 
+                </div>
+
+              
+            </form>
+         
+      </main>
+      
+      <footer>
+        <span>
+          Hecho por <strong>Delfina Merlo</strong></span></br>
+        Todos los derechos reservados &copy; 2024
+        </span>
+      </footer>
+    
+      <script src="../public/films.js"></script>
+</body>
+</html>
